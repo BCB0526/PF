@@ -1,0 +1,107 @@
+/* 전체 페이지 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. 상단 헤더 영역 스타일 */
+.header {
+    display: flex; /* 자식 요소들을 가로로 나열 */
+    justify-content: space-between; /* 양 끝 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.wiki-logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+.header-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #555;
+}
+.search-box input {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+/* 2. 메인 콘텐츠 영역 스타일 */
+.main-content {
+    width: 800px;
+    margin: 20px auto; /* 중앙 정렬 */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.last-edited {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.action-buttons .button {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 5px;
+}
+.action-buttons .button.star {
+    background-color: #f7f7f7;
+    border-color: #ddd;
+}
+.action-buttons .button:hover {
+    background-color: #f0f0f0;
+}
+
+/* 이미지 배너 스타일 */
+.banner-container {
+    margin: 20px 0;
+    text-align: center;
+}
+.main-banner {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* 네모 칸 스타일 (재활용 가능한 클래스) */
+.category-box,
+.parent-document-box,
+.notice-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.category-box {
+    background-color: #f9f9f9;
+}
+.parent-document-box {
+    background-color: #e8f0fe;
+    border-left: 5px solid #4a86e8;
+}
+.notice-box {
+    background-color: #fffbe2;
+    border-left: 5px solid #ffeb3b;
+}
+.parent-document-title .icon {
+    color: #4a86e8;
+    margin-right: 5px;
+    font-weight: bold;
+}
